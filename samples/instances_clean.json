@@ -1,0 +1,28 @@
+{
+  "instances": [
+    {
+      "name": "prod-web-1",
+      "environment": "production",
+      "lifecycle_state": "RUNNING",
+      "plugins": [
+        {"name": "Bastion", "enabled": true, "status": "RUNNING"},
+        {"name": "Vulnerability Scanning", "enabled": true, "status": "RUNNING"},
+        {"name": "OS Management Service Agent", "enabled": true, "status": "RUNNING"},
+        {"name": "Custom Logs Monitoring", "enabled": true, "status": "RUNNING"},
+        {"name": "Compute Instance Monitoring", "enabled": true, "status": "RUNNING"}
+      ]
+    },
+    {
+      "name": "dev-app-1",
+      "environment": "development",
+      "lifecycle_state": "RUNNING",
+      "plugins": [
+        {"name": "Bastion", "enabled": true, "status": "RUNNING"},
+        {"name": "Vulnerability Scanning", "enabled": true, "status": "RUNNING"},
+        {"name": "OS Management Service Agent", "enabled": true, "status": "RUNNING"},
+        {"name": "Custom Logs Monitoring", "enabled": true, "status": "RUNNING"},
+        {"name": "Compute Instance Monitoring", "enabled": true, "status": "RUNNING"}
+      ]
+    }
+  ]
+}
